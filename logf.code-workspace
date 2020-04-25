@@ -4,5 +4,17 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.tabSize": 2,
+		"javascript.validate.enable": true,
+		"workbench.colorCustomizations": {
+			"editorUnnecessaryCode.border": "#f0f",
+			"editorUnnecessaryCode.opacity": "#000f"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"dbaeumer.vscode-eslint"
+		]
+	}
 }
