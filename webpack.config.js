@@ -39,6 +39,11 @@ const serverConfig = {
         }
       }
     ]
+  },
+  externals: {
+    // `socket.io` depends on `uws` which is deprecated
+    // see: https://github.com/socketio/engine.io/issues/575#issuecomment-578081012
+    uws: 'uws'
   }
 };
 
