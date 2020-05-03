@@ -70,9 +70,15 @@ const clientConfig = {
     })
   ],
   resolve: {
+    symlinks: true,
     alias: {
       'logf-common': path.resolve(srcRoot, 'common')
-    }
+    },
+    modules: [
+      // see: https://github.com/webpack/webpack/issues/8824#issuecomment-475995296
+      './node_modules',
+      './src/common'
+    ]
   },
   module: {
     rules: [
