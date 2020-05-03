@@ -5,7 +5,8 @@ module.exports = {
 		"node": true
 	},
 	"extends": [
-		"airbnb-base"
+		"airbnb-base",
+		"plugin:jsdoc/recommended"
 	],
 	"globals": {
 		"Atomics": "readonly",
@@ -15,6 +16,9 @@ module.exports = {
 		"ecmaVersion": 2018,
 		"sourceType": "module"
 	},
+	"plugins": [
+		"jsdoc"
+	],
 	"rules": {
 		"no-const-assign": "warn",
 		"no-this-before-super": "warn",
@@ -78,8 +82,8 @@ module.exports = {
 	},
 	settings: {
 		'import/resolver': {
-      node: {},
-      webpack: {}
-    }
+			node: {},
+			webpack: {}
+		}
 	}
 };
