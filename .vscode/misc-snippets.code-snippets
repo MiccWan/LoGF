@@ -35,7 +35,7 @@
 	"JSDoc: @type": {
 		"prefix": "@type",
 		"body": [
-			"/** @type {$1} {$2: description} */$0"
+			"/** @type {$1} ${2: description} */$0"
 		]
 	},
 	"JSDoc: @param": {
