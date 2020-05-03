@@ -1,5 +1,5 @@
 import SocketIO from 'socket.io';
-import { allRooms } from '../game/allRooms';
+import allRooms from '../game/allRooms';
 import User from '../game/User';
 
 export function initSocket(server) {

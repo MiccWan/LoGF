@@ -75,6 +75,7 @@ module.exports = {
 		"one-var": 0,
 		"one-var-declaration-per-line": 0,
 		"dot-location": 0,
+		"jsdoc/require-jsdoc": 0,
 		"jsdoc/require-description": 0,
 		"jsdoc/require-param-description": 0
 	},
