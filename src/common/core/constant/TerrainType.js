@@ -1,6 +1,6 @@
 import Enum from "../../util/Enum";
 
-let TerrainTypes = {
+let TerrainType = {
   resource: 0,
   plain: 1,
   forest: 2,
@@ -9,9 +9,6 @@ let TerrainTypes = {
   boss: 5
 };
 
-TerrainTypes = new Enum(TerrainTypes);
+TerrainType = new Enum(TerrainType);
 
-export default TerrainTypes;
-
-
-TerrainTypes.names;
+export default TerrainType;
