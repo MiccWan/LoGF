@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "logf-common/*": [
+        "src/common/*"
+      ]
+    }
+  }
+}

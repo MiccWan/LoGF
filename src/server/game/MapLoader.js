@@ -8,14 +8,13 @@ import GameMap from 'logf-common/core/data/Map/GameMap';
 import TerrainType from 'logf-common/core/constant/TerrainType';
 
 export default class MapLoader {
-
   // ###########################################################################
   //  public
   // ###########################################################################
 
   /**
-   * 
-   * @param {string} filePath 
+   * @param {string} filePath
+   * @return {GameMap}
    */
   loadMap(filePath) {
     return this._loadMap(filePath);
@@ -24,6 +23,7 @@ export default class MapLoader {
   // ###########################################################################
   //  private
   // ###########################################################################
+  
   /**
    * @param {string} filePath 
    * @return {GameMap}
