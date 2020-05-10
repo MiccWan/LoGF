@@ -1,0 +1,9 @@
+{
+  "taiWanHumanoid": {
+    "name": "taiwanHumanoid",
+    "displayName": "蓬萊人形",
+    "hp": 5,
+    "attack": 4,
+    "defense": 0
+  }
+}
