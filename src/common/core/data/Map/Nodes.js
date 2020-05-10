@@ -1,18 +1,15 @@
-/**
- * @typedef {import('./Node.js').default} Node
- * @typedef {import('./Edge.js').default} Edge 
- */
+import shuffle from 'lodash/shuffle';
+import TerrainType from 'logf-common/core/constant/TerrainType';
+import { makeToken } from 'logf-common/util/makeToken';
+import TokenType from 'logf-common/core/constant/TokenType';
+import Node from './Node';
+
 export default class Nodes {
-  /**
-   * node array to Nodes
-   * @param {Node[]} nodes 
-   * @param {Edge[]} edges
-   */
-  constructor(nodes, edges) {
-    this.nodes = nodes;
-    this.nodesByTerrain = this._buildNodesByTerrain(nodes);
-    this.nodeById = this._buildNodesById(nodes);
-    this.neighbor = this._buildNeighbor(edges);
+  constructor(mapData) {
+    /** @type {Node[]} */
+    this._all;
+
+    this._buildNodes(mapData);
   }
 
   // ########################################
@@ -39,40 +36,71 @@ export default class Nodes {
    * @param {string} id
    * @return {Node[]} 
    */
-  getNodeById(id) {
+  getNeighborById(id) {
     return this.neighbor[id];
   }
 
   // ########################################
   //  private
   // ########################################
-  
+
+
+  // ###########################################################################
+  //  constructor
+  // ###########################################################################
+
+  _buildNodes(mapData) {
+    //build token and shuffle
+    const tokens = this._buildTokens(mapData);
+
+    // build node
+    this._all = mapData.node.map((nodeData) => {
+      nodeData.terrain = TerrainType.valueFrom(nodeData.terrain);
+      const node = new Node(nodeData);
+      node.setToken(tokens[nodeData.terrain].pop());
+      return node;
+    });
+
+    // add to reverse lookup
+    this.nodesByTerrain = this._buildNodesByTerrain();
+    this.nodeById = this._buildNodesById();
+    this.neighbor = this._buildNeighbor(mapData.edge);
+  }
+
   /**
-   * @param {Node[]} nodes 
    * @return {Node[][]}
    */
-  _buildNodesByTerrain(nodes) {
+  _buildNodesByTerrain() {
     const nodesByTerrain = [];
-    for (const node of nodes) {
+    for (const node of this._all) {
       nodesByTerrain[node.terrain].push(node);
     }
     return nodesByTerrain;
   }
 
   /**
-   * @param {Node[]} nodes 
    * @return {Map}
    */
-  _buildNodesById(nodes) {
+  _buildNodesById() {
     const nodesById = new Map();
-    for (const node of nodes) {
+    for (const node of this._all) {
       nodesById.set(node.id, node);
     }
     return nodesById;
   }
 
+  /*_buildNodes(mapData) {
+    const nodeArr = mapData.node.map((node) => {
+      node.terrain = TerrainType.valueFrom(node.terrain);
+      return new Node(node);
+    });
+    const edgeArr = mapData.edge.map((edge) => {
+      return new Edge(edge);
+    });
+    
+  }*/
+
   /**
-   * @param {Edge[]} edges
    * @return {Map} 
    */
   _buildNeighbor(edges) {
@@ -87,5 +115,33 @@ export default class Nodes {
       neighborByNodeId.set(edge.to, neighbor2);
     }
     return neighborByNodeId;
+  }
+
+  _buildTokens(mapData) {
+    const tokenData = mapData.token;
+    const tokens = {};
+    console.log(Object.keys(tokenData));
+    for (let terrainName of Object.keys(tokenData)) {
+      const tokenArr = [];
+      for (let [key, val] of Object.entries(tokenData[terrainName])) {
+        if (key === 'mob') {
+          for (let [mobName, amount] of Object.entries(val)) {
+            for (let i = 0; i < amount; i++) {
+              const mobProp = mapData.mob[mobName];
+              tokenArr.push(makeToken('mob', mobProp));
+            }
+          }
+        }
+        else {
+          for (let i = 0; i < val; i++) {
+            tokenArr.push(makeToken(key));
+          }
+        }
+      }
+      const terrainType = TerrainType.valueFrom(terrainName);
+      tokens[terrainType] = shuffle(tokenArr);
+    }
+
+    return tokens;
   }
 }

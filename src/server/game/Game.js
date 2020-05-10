@@ -7,7 +7,7 @@ export default class Game {
   }
 
   initialize() {
-    this.loadMap('femine.json');
+    this.loadMap('logf');
   }
   /**
    * @param {string} filepath

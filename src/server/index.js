@@ -8,4 +8,11 @@ function activate() {
   initRooms();
 }
 
-activate();
+try {
+  activate();
+}
+catch (err) {
+  // console.error(err);
+  debugger;
+  throw err;
+}

@@ -15,4 +15,5 @@ export default class Room {
   userJoin(user) {
     this._players.push(user);
   }
+
 }

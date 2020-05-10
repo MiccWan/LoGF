@@ -1,3 +1,4 @@
+import TerrainType from 'logf-common/core/constant/TerrainType';
 import Position from './Position';
 
 export default class Node {
@@ -8,8 +9,16 @@ export default class Node {
     /** @type {string} */
     this.id = nodeData.id;
     /** @type {number} */
-    this.terrain = nodeData.terrain;
+    this.terrain = TerrainType.valueFrom(nodeData.terrain);
     /** @type {Position} */
     this.position = Position.fromObject(nodeData.position);
+  }
+
+  // ###########################################################################
+  //  public
+  // ###########################################################################
+  
+  setToken(token) {
+    this.token = token;
   }
 }

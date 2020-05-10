@@ -1,14 +1,10 @@
-/**
- * @typedef {import('./Edge').default} Edge
- * @typedef {import('./Node').default} Node 
- */
+import Edge from './Edge';
+
 export default class Edges {
-  /**
-   * edge array to Edges
-   * @param {Edge[]} edges 
-   */
-  constructor(edges) {
-    this.edges = edges;
+  constructor(mapData) {
+    this._all = mapData.edge.map((edgeData) => {
+      return new Edge(edgeData);
+    });
   }
 
   // ########################################

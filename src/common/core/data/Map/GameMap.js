@@ -1,14 +1,16 @@
-/**
- * @typedef {import('./Nodes').default} Nodes
- * @typedef {import('./Edges').default} Edges
- */
+import Nodes from "./Nodes";
+import Edges from "./Edges";
+
 export default class GameMap {
-  /**
-   * @param {Nodes} nodes 
-   * @param {Edges} edges 
-   */
-  constructor(nodes, edges) {
-    this.nodes = nodes;
-    this.edges = edges;
+  constructor(mapData) {
+    this.nodes = new Nodes(mapData);
+    this.edges = new Edges(mapData);
   }
+  // ###########################################################################
+  //  publice
+  // ###########################################################################
+
+  // ###########################################################################
+  //  private
+  // ###########################################################################
 }
