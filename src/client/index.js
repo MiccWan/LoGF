@@ -1,5 +1,5 @@
 import ioClient from 'socket.io-client';
-import Player from 'logf-common/core/data/Player';
+import Player from 'logf-common/core/data/player/Player';
 
 
 const micc = new Player('Michael', 'd01');

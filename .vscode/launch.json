@@ -5,13 +5,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "nodemon",
-      "type": "pwa-node",
+      "name": "Launch",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/dist/server.bundle.js",
+      "sourceMaps": true,
+      "smartStep": true,
+      "stopOnEntry": false,
+      "outFiles": [
+        "${workspaceRoot}/dist/*.js"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Launch with nodemon",
+      "type": "node",
       "request": "launch",
       "runtimeExecutable": "nodemon",
-      "runtimeArgs": [
-        "--nolazy",
-      ],
       "program": "${workspaceFolder}/dist/server.bundle.js",
       "restart": true,
       "sourceMaps": true,
