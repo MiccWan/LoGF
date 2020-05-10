@@ -1,5 +1,6 @@
 module.exports = {
 	"env": {
+		"commonjs": true,
 		"browser": true,
 		"es6": true,
 		"node": true
@@ -26,7 +27,7 @@ module.exports = {
 		"no-debugger": 0,
 		"no-console": "error",
 		"no-invalid-this": 0,
-		"no-useless-constructor": 0,
+		// "no-useless-constructor": 0,
 		"no-underscore-dangle": 0,
 		"no-restricted-syntax": 0,
 		"no-trailing-spaces": 0,
