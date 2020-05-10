@@ -77,10 +77,17 @@ module.exports = {
 		"dot-location": 0,
 		"jsdoc/require-jsdoc": 0,
 		"jsdoc/require-description": 0,
+		"jsdoc/require-returns-description": 0,
 		"jsdoc/require-param-description": 0
 	},
+
 	settings: {
-		'import/resolver': {
+		"jsdoc": {
+			"tagNamePreference": {
+				"returns": "return"
+			}
+		},
+		"import/resolver": {
 			node: {},
 			webpack: {}
 		}
