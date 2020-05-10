@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 const logfRoot = path.resolve(__dirname);
 const srcRoot = path.join(logfRoot, 'src');
@@ -20,11 +21,18 @@ const serverConfig = {
   output: {
     path: distRoot,
     filename: '[name].bundle.js',
+    devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]'
   },
   resolve: {
+    symlinks: true,
     alias: {
       'logf-common': path.resolve(srcRoot, 'common')
-    }
+    },
+    modules: [
+      // see: https://github.com/webpack/webpack/issues/8824#issuecomment-475995296
+      './node_modules',
+      // './src/common'
+    ]
   },
   module: {
     rules: [
@@ -40,18 +48,21 @@ const serverConfig = {
       }
     ]
   },
-  externals: {
-    // `socket.io` depends on `uws` which is deprecated
-    // see: https://github.com/socketio/engine.io/issues/575#issuecomment-578081012
-    uws: 'uws'
-  }
+  externals: [
+    {
+      // `socket.io` depends on `uws` which is deprecated
+      // see: https://github.com/socketio/engine.io/issues/575#issuecomment-578081012
+      uws: 'uws'
+    },
+    nodeExternals()
+  ]
 };
 
 const clientConfig = {
   mode: 'development',
   watch: true,
   devtool: 'source-map',
-  target: 'node',
+  target: 'web',
   node: {
     __dirname: false
   },
@@ -62,6 +73,7 @@ const clientConfig = {
   output: {
     path: path.join(distRoot, 'public'),
     filename: '[name].bundle.js',
+    devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -70,9 +82,15 @@ const clientConfig = {
     })
   ],
   resolve: {
+    symlinks: true,
     alias: {
       'logf-common': path.resolve(srcRoot, 'common')
-    }
+    },
+    modules: [
+      // see: https://github.com/webpack/webpack/issues/8824#issuecomment-475995296
+      './node_modules',
+      './src/common'
+    ]
   },
   module: {
     rules: [

@@ -1,12 +1,12 @@
 /**
  * @typedef {import('./User.js').default} User
  */
-
-import User from './User';
+import Game from './Game';
 
 export default class Room {
   constructor() {
     this._players = [];
+    this.game = new Game();
   }
 
   /**

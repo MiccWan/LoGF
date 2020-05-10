@@ -12,10 +12,7 @@ module.exports = {
 		"Atomics": "readonly",
 		"SharedArrayBuffer": "readonly"
 	},
-	"parserOptions": {
-		"ecmaVersion": 2018,
-		"sourceType": "module"
-	},
+	"parser": "babel-eslint",
 	"plugins": [
 		"jsdoc"
 	],
@@ -48,7 +45,6 @@ module.exports = {
 		"no-await-in-loop": 0,
 		"constructor-super": "warn",
 		"valid-typeof": "warn",
-		// "class-methods-use-this": "warn",
 		"class-methods-use-this": 0,
 		"import/prefer-default-export": 0,
 		"import/no-nodejs-modules": 0,
@@ -78,10 +74,20 @@ module.exports = {
 		"max-len": ["warn", { "code": 120 }],
 		"one-var": 0,
 		"one-var-declaration-per-line": 0,
-		"dot-location": 0
+		"dot-location": 0,
+		"jsdoc/require-jsdoc": 0,
+		"jsdoc/require-description": 0,
+		"jsdoc/require-returns-description": 0,
+		"jsdoc/require-param-description": 0
 	},
+
 	settings: {
-		'import/resolver': {
+		"jsdoc": {
+			"tagNamePreference": {
+				"returns": "return"
+			}
+		},
+		"import/resolver": {
 			node: {},
 			webpack: {}
 		}
