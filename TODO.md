@@ -8,5 +8,7 @@
 
 ## TODO (front-end)
 * render Map and controll board
+* design css import structure
 
 ## TODO (back-end)
+* game design

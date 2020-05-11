@@ -1,18 +1,21 @@
-import MapLoader from './MapLoader';
+import GameMap from 'logf-common/core/data/map/GameMap';
+import mapLoader from '../mapLoader';
 
 export default class Game {
-  constructor() {
-    this.mapLoader = new MapLoader();
-    this.initialize();
+  constructor() {    
+    this.init();
   }
 
-  initialize() {
-    this.loadMap('logf');
+  init() {
+    this.map = this.loadMap('logf');
   }
+
   /**
-   * @param {string} filepath
+   * @param {string} folderName
+   * @return {GameMap}
    */
-  loadMap(filepath) {
-    this.map = this.mapLoader.loadMap(filepath);
+  loadMap(folderName) {
+    const mapData = mapLoader.loadMap(folderName);
+    return new GameMap(mapData);
   }
 }

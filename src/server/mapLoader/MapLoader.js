@@ -1,41 +1,29 @@
 import fs from 'fs';
 import path from 'path';
-//import Node from 'logf-common/core/data/Map/Node';
-//import Edge from 'logf-common/core/data/Map/Edge';
-//import Nodes from 'logf-common/core/data/Map/Nodes';
-//import Edges from 'logf-common/core/data/Map/Edges';
 import GameMap from 'logf-common/core/data/map/GameMap';
 
 const mapsFolderPath = path.join(__dirname, '../src/server/custom/maps');
+
 export default class MapLoader {
   // ###########################################################################
   //  public
   // ###########################################################################
 
   /**
-   * @param {string} filePath
+   * @param {string} folderName
    * @return {GameMap}
    */
-  loadMap(filePath) {
-    return this._buildMap(filePath);
+  loadMap(folderName) {
+    const folderPath = path.join(mapsFolderPath, folderName);
+    const mapData = this._buildMapData(folderPath);
+    return mapData;
   }
 
   // ###########################################################################
   //  private
   // ###########################################################################
 
-  /**
-   * @param {string} folderName 
-   * @return {GameMap}
-   */
-  _buildMap(folderName) {
-    const folderPath = path.join(mapsFolderPath, folderName);
-    const mapData = this._loadMapFolder(folderPath);
-    const gameMap = new GameMap(mapData);
-    return gameMap;
-  }
-
-  _loadMapFolder(folderPath) {
+  _buildMapData(folderPath) {
     const mapData = {};
     mapData.node = this._readJSON(folderPath, 'node.json');
     mapData.edge = this._readJSON(folderPath, 'edge.json');
@@ -45,16 +33,14 @@ export default class MapLoader {
   }
 
   _readJSON(...args) {
+    const filePath = path.join(...args);
     try {
-      const filePath = path.join(...args);
       const data = fs.readFileSync(filePath);
       return JSON.parse(data.toString('utf-8'));
     }
     catch (err) {
-      console.error(err);
-      debugger;
+      console.error(`Error reading file ${filePath}`);
       throw err;
     }
   }
-
 }

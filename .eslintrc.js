@@ -25,7 +25,7 @@ module.exports = {
 		"no-unused-vars": "warn",
 		"no-else-return": 0,
 		"no-debugger": 0,
-		"no-console": "error",
+		"no-console": 0,
 		"no-invalid-this": 0,
 		// "no-useless-constructor": 0,
 		"no-underscore-dangle": 0,

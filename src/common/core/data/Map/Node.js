@@ -1,16 +1,19 @@
-import TerrainType from 'logf-common/core/constant/TerrainType';
 import Position from './Position';
 
 export default class Node {
   /**
-   * input be like {id:string, terrain:number, x:number, y:number}
+   * @param {{
+   *  id: string,
+   *  terrain: number,
+   *  position: {
+   *    x: number,
+   *    y: number
+   *  }
+   * }} nodeData
    */
   constructor(nodeData) {
-    /** @type {string} */
     this.id = nodeData.id;
-    /** @type {number} */
-    this.terrain = TerrainType.valueFrom(nodeData.terrain);
-    /** @type {Position} */
+    this.terrain = nodeData.terrain;
     this.position = Position.fromObject(nodeData.position);
   }
 

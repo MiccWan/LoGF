@@ -15,21 +15,6 @@
       ]
     },
     {
-      "name": "nodemon",
-      "type": "node",
-      "request": "launch",
-      "program": "${workspaceFolder}/dist/server.bundle.js",
-      "sourceMaps": true,
-      "smartStep": true,
-      "stopOnEntry": false,
-      "outFiles": [
-        "${workspaceRoot}/dist/*.js"
-      ],
-      "skipFiles": [
-        "<node_internals>/**"
-      ]
-    },
-    {
       "name": "Launch with nodemon",
       "type": "node",
       "request": "launch",
