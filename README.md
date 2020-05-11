@@ -4,6 +4,8 @@
 
 LoGF is a board game developed by a student group **AoKCP**.
 
+Note: The branch `master` is not active yet, check dev branch instead for latest update.
+
 ## Members
 
 ### Tech
@@ -15,5 +17,3 @@ LoGF is a board game developed by a student group **AoKCP**.
   * [Purc](https://www.facebook.com/purcs)
   * [Alex](https://www.facebook.com/profile.php?id=100008094797636)
   * [Mark](https://www.facebook.com/profile.php?id=100001519320026)
-
-The master branch is not active yet, check dev branch instead for latest update.
