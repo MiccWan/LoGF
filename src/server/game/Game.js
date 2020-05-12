@@ -7,15 +7,15 @@ export default class Game {
   }
 
   init() {
-    this.map = this.loadMap('logf');
+    this.map = this._buildMap('logf');
   }
 
   /**
-   * @param {string} folderName
+   * @param {string} mapName
    * @return {GameMap}
    */
-  loadMap(folderName) {
-    const mapData = mapLoader.loadMap(folderName);
+  _buildMap(mapName) {
+    const mapData = mapLoader.loadMap(mapName);
     return new GameMap(mapData);
   }
 }

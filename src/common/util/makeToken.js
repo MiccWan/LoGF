@@ -26,4 +26,4 @@ export function makeToken(tokenType, props) {
   const TokenClass = TokenClassByName[TokenType.valueFrom(tokenType)];
   const token = new TokenClass(props);
   return token;
-}
+} 

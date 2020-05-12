@@ -10,6 +10,11 @@
 ## TODO (front-end)
 * render Map and controll board
 * design css import structure
+* in activate function, build room list and add create game option
 
 ## TODO (back-end)
 * game design
+* resource token
+* token manager??
+* cache for mapLoader
+* add userList class

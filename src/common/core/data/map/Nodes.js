@@ -21,7 +21,7 @@ export default class Nodes {
    * @param {string} id 
    * @return {Node}
    */
-  getbyId(id) {
+  getById(id) {
     return this._nodesById.get(id);
   }
 
@@ -29,7 +29,7 @@ export default class Nodes {
    * @param {number|string} terrain 
    * @return {Node[]}
    */
-  getbyTerrain(terrain) {
+  getByTerrain(terrain) {
     const terrainValue = TerrainType.valueFrom(terrain);
     return this._nodesByTerrain[terrainValue];
   }
@@ -77,8 +77,8 @@ export default class Nodes {
   _buildNeighbor(edges) {
     for (const edge of edges) {
       const { from, to } = edge;
-      this._neighborById[from].push(this.getbyId(to));
-      this._neighborById[to].push(this.getbyId(from));
+      this._neighborById[from].push(this.getById(to));
+      this._neighborById[to].push(this.getById(from));
     }
   }
 
