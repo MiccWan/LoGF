@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "rw1",
+    "terrain": "resource",
+    "position": {
+      "x": 12,
+      "y": 15
+    }
+  },
+  {
+    "id": "rw2",
+    "terrain": "resource",
+    "position": {
+      "x": 18,
+      "y": 17
+    }
+  },
+  {
+    "id": "rw3",
+    "terrain": "resource",
+    "position": {
+      "x": 18.7,
+      "y": 13.3
+    }
+  },
+  {
+    "id": "rw4",
+    "terrain": "resource",
+    "position": {
+      "x": 21,
+      "y": 10
+    }
+  },
+  {
+    "id": "rw5",
+    "terrain": "resource",
+    "position": {
+      "x": 23.3,
+      "y": 13.3
+    }
+  },
+  {
+    "id": "rs1",
+    "terrain": "resource",
+    "position": {
+      "x": 7,
+      "y": 5
+    }
+  },
+  {
+    "id": "rs2",
+    "terrain": "resource",
+    "position": {
+      "x": 2,
+      "y": 16
+    }
+  },
+  {
+    "id": "rs3",
+    "terrain": "resource",
+    "position": {
+      "x": 8,
+      "y": 13
+    }
+  },
+  {
+    "id": "rs4",
+    "terrain": "resource",
+    "position": {
+      "x": 25,
+      "y": 3
+    }
+  },
+  {
+    "id": "rs5",
+    "terrain": "resource",
+    "position": {
+      "x": 26,
+      "y": 15
+    }
+  },
+  {
+    "id": "rs6",
+    "terrain": "resource",
+    "position": {
+      "x": 26,
+      "y": 17
+    }
+  },
+  {
+    "id": "rs7",
+    "terrain": "resource",
+    "position": {
+      "x": 16,
+      "y": 13
+    }
+  },
+  {
+    "id": "rd1",
+    "terrain": "resource",
+    "position": {
+      "x": 10,
+      "y": 17
+    }
+  },
+  {
+    "id": "rd2",
+    "terrain": "resource",
+    "position": {
+      "x": 18,
+      "y": 15
+    }
+  },
+  {
+    "id": "rd3",
+    "terrain": "resource",
+    "position": {
+      "x": 25.5,
+      "y": 5.5
+    }
+  },
+  {
+    "id": "p01",
+    "terrain": "plain",
+    "position": {
+      "x": 5,
+      "y": 8
+    }
+  },
+  {
+    "id": "p02",
+    "terrain": "plain",
+    "position": {
+      "x": 5,
+      "y": 10
+    }
+  },
+  {
+    "id": "p03",
+    "terrain": "plain",
+    "position": {
+      "x": 5,
+      "y": 12
+    }
+  },
+  {
+    "id": "p04",
+    "terrain": "plain",
+    "position": {
+      "x": 5,
+      "y": 14
+    }
+  },
+  {
+    "id": "p05",
+    "terrain": "plain",
+    "position": {
+      "x": 7,
+      "y": 14
+    }
+  },
+  {
+    "id": "p06",
+    "terrain": "plain",
+    "position": {
+      "x": 9,
+      "y": 14
+    }
+  },
+  {
+    "id": "p07",
+    "terrain": "plain",
+    "position": {
+      "x": 11,
+      "y": 6
+    }
+  },
+  {
+    "id": "p08",
+    "terrain": "plain",
+    "position": {
+      "x": 11,
+      "y": 8
+    }
+  },
+  {
+    "id": "p09",
+    "terrain": "plain",
+    "position": {
+      "x": 11,
+      "y": 10
+    }
+  },
+  {
+    "id": "p10",
+    "terrain": "plain",
+    "position": {
+      "x": 13,
+      "y": 12
+    }
+  },
+  {
+    "id": "p11",
+    "terrain": "plain",
+    "position": {
+      "x": 15,
+      "y": 6
+    }
+  },
+  {
+    "id": "p12",
+    "terrain": "plain",
+    "position": {
+      "x": 13,
+      "y": 6
+    }
+  },
+  {
+    "id": "p13",
+    "terrain": "plain",
+    "position": {
+      "x": 13,
+      "y": 8
+    }
+  },
+  {
+    "id": "p14",
+    "terrain": "plain",
+    "position": {
+      "x": 15,
+      "y": 8
+    }
+  },
+  {
+    "id": "p15",
+    "terrain": "plain",
+    "position": {
+      "x": 18.5,
+      "y": 6.5
+    }
+  },
+  {
+    "id": "p16",
+    "terrain": "plain",
+    "position": {
+      "x": 18.5,
+      "y": 4.7
+    }
+  },
+  {
+    "id": "p17",
+    "terrain": "plain",
+    "position": {
+      "x": 22,
+      "y": 6
+    }
+  },
+  {
+    "id": "p18",
+    "terrain": "plain",
+    "position": {
+      "x": 28,
+      "y": 6
+    }
+  },
+  {
+    "id": "p19",
+    "terrain": "plain",
+    "position": {
+      "x": 28,
+      "y": 8
+    }
+  },
+  {
+    "id": "p20",
+    "terrain": "plain",
+    "position": {
+      "x": 28,
+      "y": 10
+    }
+  },
+  {
+    "id": "p21",
+    "terrain": "plain",
+    "position": {
+      "x": 27,
+      "y": 12
+    }
+  },
+  {
+    "id": "p22",
+    "terrain": "plain",
+    "position": {
+      "x": 26,
+      "y": 10
+    }
+  },
+  {
+    "id": "p23",
+    "terrain": "plain",
+    "position": {
+      "x": 25,
+      "y": 12
+    }
+  },
+  {
+    "id": "f01",
+    "terrain": "forest",
+    "position": {
+      "x": 11,
+      "y": 12
+    }
+  },
+  {
+    "id": "f02",
+    "terrain": "forest",
+    "position": {
+      "x": 13,
+      "y": 14
+    }
+  },
+  {
+    "id": "f03",
+    "terrain": "forest",
+    "position": {
+      "x": 11,
+      "y": 14
+    }
+  },
+  {
+    "id": "f04",
+    "terrain": "forest",
+    "position": {
+      "x": 11,
+      "y": 16
+    }
+  },
+  {
+    "id": "f05",
+    "terrain": "forest",
+    "position": {
+      "x": 11,
+      "y": 18
+    }
+  },
+  {
+    "id": "f06",
+    "terrain": "forest",
+    "position": {
+      "x": 13,
+      "y": 18
+    }
+  },
+  {
+    "id": "f07",
+    "terrain": "forest",
+    "position": {
+      "x": 20,
+      "y": 8
+    }
+  },
+  {
+    "id": "f08",
+    "terrain": "forest",
+    "position": {
+      "x": 16,
+      "y": 10
+    }
+  },
+  {
+    "id": "f09",
+    "terrain": "forest",
+    "position": {
+      "x": 19.3,
+      "y": 10
+    }
+  },
+  {
+    "id": "f10",
+    "terrain": "forest",
+    "position": {
+      "x": 19,
+      "y": 12
+    }
+  },
+  {
+    "id": "f11",
+    "terrain": "forest",
+    "position": {
+      "x": 19.7,
+      "y": 14
+    }
+  },
+  {
+    "id": "f12",
+    "terrain": "forest",
+    "position": {
+      "x": 19,
+      "y": 16
+    }
+  },
+  {
+    "id": "f13",
+    "terrain": "forest",
+    "position": {
+      "x": 19,
+      "y": 18
+    }
+  },
+  {
+    "id": "f14",
+    "terrain": "forest",
+    "position": {
+      "x": 17,
+      "y": 18
+    }
+  },
+  {
+    "id": "f15",
+    "terrain": "forest",
+    "position": {
+      "x": 24.35,
+      "y": 10
+    }
+  },
+  {
+    "id": "f16",
+    "terrain": "forest",
+    "position": {
+      "x": 22.7,
+      "y": 10
+    }
+  },
+  {
+    "id": "f17",
+    "terrain": "forest",
+    "position": {
+      "x": 21,
+      "y": 12
+    }
+  },
+  {
+    "id": "f18",
+    "terrain": "forest",
+    "position": {
+      "x": 23,
+      "y": 12
+    }
+  },
+  {
+    "id": "f19",
+    "terrain": "forest",
+    "position": {
+      "x": 22.3,
+      "y": 14
+    }
+  },
+  {
+    "id": "f20",
+    "terrain": "forest",
+    "position": {
+      "x": 21,
+      "y": 16
+    }
+  },
+  {
+    "id": "f21",
+    "terrain": "forest",
+    "position": {
+      "x": 21,
+      "y": 18
+    }
+  },
+  {
+    "id": "m01",
+    "terrain": "mountain",
+    "position": {
+      "x": 5,
+      "y": 6
+    }
+  },
+  {
+    "id": "m02",
+    "terrain": "mountain",
+    "position": {
+      "x": 6,
+      "y": 4
+    }
+  },
+  {
+    "id": "m03",
+    "terrain": "mountain",
+    "position": {
+      "x": 8,
+      "y": 4
+    }
+  },
+  {
+    "id": "m04",
+    "terrain": "mountain",
+    "position": {
+      "x": 9,
+      "y": 6
+    }
+  },
+  {
+    "id": "m05",
+    "terrain": "mountain",
+    "position": {
+      "x": 7,
+      "y": 8
+    }
+  },
+  {
+    "id": "m06",
+    "terrain": "mountain",
+    "position": {
+      "x": 9,
+      "y": 8
+    }
+  },
+  {
+    "id": "m07",
+    "terrain": "mountain",
+    "position": {
+      "x": 9,
+      "y": 10
+    }
+  },
+  {
+    "id": "m08",
+    "terrain": "mountain",
+    "position": {
+      "x": 9,
+      "y": 12
+    }
+  },
+  {
+    "id": "m09",
+    "terrain": "mountain",
+    "position": {
+      "x": 23,
+      "y": 18
+    }
+  },
+  {
+    "id": "m10",
+    "terrain": "mountain",
+    "position": {
+      "x": 3,
+      "y": 14
+    }
+  },
+  {
+    "id": "m11",
+    "terrain": "mountain",
+    "position": {
+      "x": 1,
+      "y": 15
+    }
+  },
+  {
+    "id": "m12",
+    "terrain": "mountain",
+    "position": {
+      "x": 1,
+      "y": 17
+    }
+  },
+  {
+    "id": "m13",
+    "terrain": "mountain",
+    "position": {
+      "x": 3,
+      "y": 18
+    }
+  },
+  {
+    "id": "m14",
+    "terrain": "mountain",
+    "position": {
+      "x": 3,
+      "y": 16
+    }
+  },
+  {
+    "id": "m15",
+    "terrain": "mountain",
+    "position": {
+      "x": 5,
+      "y": 16
+    }
+  },
+  {
+    "id": "m16",
+    "terrain": "mountain",
+    "position": {
+      "x": 7,
+      "y": 16
+    }
+  },
+  {
+    "id": "m17",
+    "terrain": "mountain",
+    "position": {
+      "x": 9,
+      "y": 16
+    }
+  },
+  {
+    "id": "m18",
+    "terrain": "mountain",
+    "position": {
+      "x": 15,
+      "y": 12
+    }
+  },
+  {
+    "id": "m19",
+    "terrain": "mountain",
+    "position": {
+      "x": 17,
+      "y": 12
+    }
+  },
+  {
+    "id": "m20",
+    "terrain": "mountain",
+    "position": {
+      "x": 17,
+      "y": 14
+    }
+  },
+  {
+    "id": "m21",
+    "terrain": "mountain",
+    "position": {
+      "x": 15,
+      "y": 14
+    }
+  },
+  {
+    "id": "m22",
+    "terrain": "mountain",
+    "position": {
+      "x": 13,
+      "y": 16
+    }
+  },
+  {
+    "id": "m23",
+    "terrain": "mountain",
+    "position": {
+      "x": 15,
+      "y": 16
+    }
+  },
+  {
+    "id": "m24",
+    "terrain": "mountain",
+    "position": {
+      "x": 17,
+      "y": 16
+    }
+  },
+  {
+    "id": "m25",
+    "terrain": "mountain",
+    "position": {
+      "x": 22,
+      "y": 4
+    }
+  },
+  {
+    "id": "m26",
+    "terrain": "mountain",
+    "position": {
+      "x": 24,
+      "y": 2
+    }
+  },
+  {
+    "id": "m27",
+    "terrain": "mountain",
+    "position": {
+      "x": 26,
+      "y": 2
+    }
+  },
+  {
+    "id": "m28",
+    "terrain": "mountain",
+    "position": {
+      "x": 28,
+      "y": 4
+    }
+  },
+  {
+    "id": "m29",
+    "terrain": "mountain",
+    "position": {
+      "x": 26,
+      "y": 4
+    }
+  },
+  {
+    "id": "m30",
+    "terrain": "mountain",
+    "position": {
+      "x": 24,
+      "y": 4
+    }
+  },
+  {
+    "id": "m31",
+    "terrain": "mountain",
+    "position": {
+      "x": 24,
+      "y": 6
+    }
+  },
+  {
+    "id": "m32",
+    "terrain": "mountain",
+    "position": {
+      "x": 22,
+      "y": 8
+    }
+  },
+  {
+    "id": "m33",
+    "terrain": "mountain",
+    "position": {
+      "x": 24,
+      "y": 8
+    }
+  },
+  {
+    "id": "m34",
+    "terrain": "mountain",
+    "position": {
+      "x": 23,
+      "y": 16
+    }
+  },
+  {
+    "id": "m35",
+    "terrain": "mountain",
+    "position": {
+      "x": 25,
+      "y": 14
+    }
+  },
+  {
+    "id": "m36",
+    "terrain": "mountain",
+    "position": {
+      "x": 27,
+      "y": 14
+    }
+  },
+  {
+    "id": "m37",
+    "terrain": "mountain",
+    "position": {
+      "x": 27,
+      "y": 16
+    }
+  },
+  {
+    "id": "m38",
+    "terrain": "mountain",
+    "position": {
+      "x": 27,
+      "y": 18
+    }
+  },
+  {
+    "id": "m39",
+    "terrain": "mountain",
+    "position": {
+      "x": 25,
+      "y": 18
+    }
+  },
+  {
+    "id": "o01",
+    "terrain": "ocean",
+    "position": {
+      "x": 11,
+      "y": 20
+    }
+  },
+  {
+    "id": "o02",
+    "terrain": "ocean",
+    "position": {
+      "x": 4,
+      "y": 4
+    }
+  },
+  {
+    "id": "o03",
+    "terrain": "ocean",
+    "position": {
+      "x": 3,
+      "y": 6
+    }
+  },
+  {
+    "id": "o04",
+    "terrain": "ocean",
+    "position": {
+      "x": 3,
+      "y": 8
+    }
+  },
+  {
+    "id": "o05",
+    "terrain": "ocean",
+    "position": {
+      "x": 3,
+      "y": 12
+    }
+  },
+  {
+    "id": "o06",
+    "terrain": "ocean",
+    "position": {
+      "x": 1,
+      "y": 13
+    }
+  },
+  {
+    "id": "o07",
+    "terrain": "ocean",
+    "position": {
+      "x": 1,
+      "y": 11
+    }
+  },
+  {
+    "id": "o08",
+    "terrain": "ocean",
+    "position": {
+      "x": 13,
+      "y": 20
+    }
+  },
+  {
+    "id": "o09",
+    "terrain": "ocean",
+    "position": {
+      "x": 16,
+      "y": 19
+    }
+  },
+  {
+    "id": "o10",
+    "terrain": "ocean",
+    "position": {
+      "x": 11,
+      "y": 1
+    }
+  },
+  {
+    "id": "o11",
+    "terrain": "ocean",
+    "position": {
+      "x": 13,
+      "y": 1
+    }
+  },
+  {
+    "id": "o12",
+    "terrain": "ocean",
+    "position": {
+      "x": 13,
+      "y": 3
+    }
+  },
+  {
+    "id": "o13",
+    "terrain": "ocean",
+    "position": {
+      "x": 11,
+      "y": 3
+    }
+  },
+  {
+    "id": "o14",
+    "terrain": "ocean",
+    "position": {
+      "x": 19,
+      "y": 20
+    }
+  },
+  {
+    "id": "o15",
+    "terrain": "ocean",
+    "position": {
+      "x": 18,
+      "y": 1
+    }
+  },
+  {
+    "id": "o16",
+    "terrain": "ocean",
+    "position": {
+      "x": 16,
+      "y": 1
+    }
+  },
+  {
+    "id": "o17",
+    "terrain": "ocean",
+    "position": {
+      "x": 16,
+      "y": 3
+    }
+  },
+  {
+    "id": "o18",
+    "terrain": "ocean",
+    "position": {
+      "x": 18.5,
+      "y": 3
+    }
+  },
+  {
+    "id": "o19",
+    "terrain": "ocean",
+    "position": {
+      "x": 21,
+      "y": 20
+    }
+  },
+  {
+    "id": "o20",
+    "terrain": "ocean",
+    "position": {
+      "x": 30,
+      "y": 2
+    }
+  },
+  {
+    "id": "o21",
+    "terrain": "ocean",
+    "position": {
+      "x": 30,
+      "y": 4
+    }
+  },
+  {
+    "id": "o22",
+    "terrain": "ocean",
+    "position": {
+      "x": 30,
+      "y": 6
+    }
+  },
+  {
+    "id": "o23",
+    "terrain": "ocean",
+    "position": {
+      "x": 30,
+      "y": 12
+    }
+  },
+  {
+    "id": "o24",
+    "terrain": "ocean",
+    "position": {
+      "x": 29,
+      "y": 14
+    }
+  },
+  {
+    "id": "o25",
+    "terrain": "ocean",
+    "position": {
+      "x": 29,
+      "y": 16
+    }
+  },
+  {
+    "id": "o26",
+    "terrain": "ocean",
+    "position": {
+      "x": 29,
+      "y": 18
+    }
+  },
+  {
+    "id": "b01",
+    "terrain": "boss",
+    "position": {
+      "x": 4,
+      "y": 2
+    }
+  },
+  {
+    "id": "b02",
+    "terrain": "boss",
+    "position": {
+      "x": 1,
+      "y": 9
+    }
+  },
+  {
+    "id": "b03",
+    "terrain": "boss",
+    "position": {
+      "x": 9,
+      "y": 1
+    }
+  },
+  {
+    "id": "b04",
+    "terrain": "boss",
+    "position": {
+      "x": 20,
+      "y": 1
+    }
+  },
+  {
+    "id": "b05",
+    "terrain": "boss",
+    "position": {
+      "x": 28,
+      "y": 1
+    }
+  },
+  {
+    "id": "b06",
+    "terrain": "boss",
+    "position": {
+      "x": 29,
+      "y": 20
+    }
+  },
+  {
+    "id": "b07",
+    "terrain": "boss",
+    "position": {
+      "x": 9,
+      "y": 20
+    }
+  },
+  {
+    "id": "b08",
+    "terrain": "boss",
+    "position": {
+      "x": 16,
+      "y": 21
+    }
+  },
+  {
+    "id": "b09",
+    "terrain": "boss",
+    "position": {
+      "x": 23,
+      "y": 20
+    }
+  }
+]

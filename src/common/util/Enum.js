@@ -60,7 +60,8 @@ export default class Enum {
 
   /**
    * Will get the value, no matter if you give it a name or a value.
-   * @returns {string}
+   * 
+   * @return {string}
    */
   nameFrom = (nameOrValue) => {
     let name = this.getName(nameOrValue);

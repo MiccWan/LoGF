@@ -3,7 +3,7 @@
   "displayName": "LoGF",
   "private": true,
   "scripts": {
-    "build:watch": "npx nodemon --exec \"npx webpack --watch --mode development\"",
+    "build:watch": "npx nodemon --exec \"npx webpack --watch --mode development\" --config nodemon.config.json",
     "run:watch": "npx nodemon dist/server.bundle.js --watch",
     "logf-install": "sh scripts/logf-install.sh",
     "logf-uninstall": "rm -rf ./node_modules && rm -f ./package-lock.json"
@@ -12,9 +12,12 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-export-default-from": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-import-resolver-node": "^0.3.3",
@@ -23,12 +26,15 @@
     "eslint-plugin-jsdoc": "^24.0.0",
     "html-webpack-plugin": "^4.2.0",
     "npm-run-all": "^4.1.5",
+    "style-loader": "^1.2.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.8.7",
     "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "nodemon": "^2.0.3",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0"

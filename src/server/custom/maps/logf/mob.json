@@ -1,0 +1,65 @@
+{
+  "taiwanHumanoid": {
+    "name": "taiwanHumanoid",
+    "displayName": "蓬萊人形",
+    "hp": 5,
+    "attack": 4,
+    "defense": 0
+  },
+  "shanghaiHumanoid": {
+    "name": "shanghaiHumanoid",
+    "displayName": "上海人形",
+    "hp": 10,
+    "attack": 2,
+    "defense": 0
+  },
+  "forestElf": {
+    "name": "forestElf",
+    "displayName": "森之妖精",
+    "hp": 6,
+    "attack": 6,
+    "defense": 0
+  },
+  "daTrue": {
+    "name": "daTrue",
+    "displayName": "大觸",
+    "hp": 15,
+    "attack": 3,
+    "defense": 0
+  },
+  "iceElf": {
+    "name": "iceElf",
+    "displayName": "冰之妖精",
+    "hp": 9,
+    "attack": 9,
+    "defense": 0
+  },
+  "DD7G": {
+    "name": "DD7G",
+    "displayName": "驅逐棲姬",
+    "hp": 5,
+    "attack": 7,
+    "defense": 5
+  },
+  "CA7G": {
+    "name": "CA7G",
+    "displayName": "重巡棲姬",
+    "hp": 15,
+    "attack": 7,
+    "defense": 3
+  },
+  "NSS7G": {
+    "name": "NSS7G",
+    "displayName": "偽~娘~王 戰艦棲姬",
+    "hp": 30,
+    "attack": 8,
+    "defense": 2
+  },
+  "BB7G": {
+    "name": "BB7G",
+    "displayName": "魔王 潛水新棲姬",
+    "hp": 20,
+    "attack": 8,
+    "defense": 6
+  }
+}

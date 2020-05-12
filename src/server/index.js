@@ -1,11 +1,17 @@
 import { initExpress } from './www';
 import { initSocket } from './socket';
-import { initRooms } from './game';
+import { initRooms } from './room';
 
 function activate() {
+  initRooms();
   const app = initExpress();
   initSocket(app);
-  initRooms();
 }
 
-activate();
+try {
+  activate();
+}
+catch (err) {
+  debugger;
+  throw err;
+}

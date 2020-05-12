@@ -67,7 +67,9 @@ const clientConfig = {
     __dirname: false
   },
   context: srcRoot,
-  entry: {
+  entry:
+  {
+    '@babel/polyfill': '@babel/polyfill',
     client: './client/index.js'
   },
   output: {
@@ -103,7 +105,18 @@ const clientConfig = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+        loader: 'url-loader',
+        options: {
+          limit: 8192,
+        },
+      },
     ]
   }
 };

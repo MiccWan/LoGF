@@ -1,11 +1,18 @@
-import ioClient from 'socket.io-client';
-import Player from 'logf-common/core/data/Player';
+import './resources';
+import Player from 'logf-common/core/data/player/Player';
+import GameMap from 'logf-common/core/data/map/GameMap';
+import server from './socket';
 
+async function activate() {
+  const map = new GameMap(await server.getMap('logf'));
 
-const micc = new Player('Michael', 'd01');
+  console.log(map);
 
-console.log(micc);
+  const micc = new Player('Michael', 'd01');
 
-let io = ioClient();
+  console.log(micc);
 
-alert('[Client] Hello world!');
+  alert('[Client] Hello world!');
+}
+
+activate();

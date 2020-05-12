@@ -1,18 +1,21 @@
-import MapLoader from './MapLoader';
+import GameMap from 'logf-common/core/data/map/GameMap';
+import mapLoader from '../mapLoader';
 
 export default class Game {
-  constructor() {
-    this.mapLoader = new MapLoader();
-    this.initialize();
+  constructor() {    
+    this.init();
   }
 
-  initialize() {
-    this.loadMap('femine.json');
+  init() {
+    this.map = this._buildMap('logf');
   }
+
   /**
-   * @param {string} filepath
+   * @param {string} mapName
+   * @return {GameMap}
    */
-  loadMap(filepath) {
-    this.map = this.mapLoader.loadMap(filepath);
+  _buildMap(mapName) {
+    const mapData = mapLoader.loadMap(mapName);
+    return new GameMap(mapData);
   }
 }

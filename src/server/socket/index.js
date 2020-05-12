@@ -1,6 +1,7 @@
 import SocketIO from 'socket.io';
-import allRooms from '../game/allRooms';
+import allRooms from '../room/allRooms';
 import User from '../game/User';
+import mapLoader from '../mapLoader';
 
 export function initSocket(server) {
   const io = new SocketIO(server, {
@@ -10,13 +11,24 @@ export function initSocket(server) {
     serveClient: false
   });
 
+  const sharedData = {
+    map(mapName) {
+      return mapLoader.loadMap(mapName);
+    }
+  };
+
   io.on('connection', (socket) => {
     const newUser = new User(socket);
+    allRooms.lobby.userJoin(newUser);
 
-    console.log('On user connect.');
-
-    socket.on('addRoom', () => {
-      allRooms.addRoom();
+    socket.on('getRequest', (dataName, props) => {
+      if (!sharedData[dataName]) {
+        socket.emit(`getResponse.${dataName}`, null);
+      }
+      else {
+        const data = sharedData[dataName](props);
+        socket.emit(`getResponse.${dataName}`, data);
+      }
     });
   });
 }
